@@ -1,204 +1,15 @@
-
-// import React from 'react';
-// import styled, { keyframes } from 'styled-components';
-// import { FaLeaf, FaSolarPanel, FaTruck, FaChargingStation } from 'react-icons/fa';
-// import car1 from '../Images/car1.jpeg';
-// import car2 from '../Images/car2.jpeg';
-// import car3 from '../Images/car3.jpeg';
-
-// // Animations
-// const fadeIn = keyframes`
-//   from {
-//     opacity: 0;
-//     transform: translateY(20px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// `;
-
-// const slideBackground = keyframes`
-//   0% { background-position: 0 0; }
-//   100% { background-position: -200% 0; }
-// `;
-
-// // Styled Components
-// const AboutContainer = styled.div`
-//   animation: ${fadeIn} 1s ease;
-// `;
-
-// const HeroSection = styled.section`
-//   height: 50vh;
-//   background: url(${car1}) no-repeat center center/cover;
-//   animation: ${slideBackground} 15s linear infinite;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #fff;
-//   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-// `;
-
-// const HeroTitle = styled.h1`
-//   font-size: 3rem;
-//   font-weight: bold;
-//   text-align: center;
-//   padding: 1rem;
-// `;
-
-// const Section = styled.section`
-//   padding: 3rem 2rem;
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 2rem;
-//   justify-content: center;
-//   align-items: center;
-
-//   @media (min-width: 768px) {
-//     flex-wrap: nowrap;
-//   }
-// `;
-
-// const ContentColumn = styled.div`
-//   flex: 1;
-//   min-width: 300px;
-//   max-width: 600px;
-// `;
-
-// const ImageColumn = styled.div`
-//   flex: 1;
-//   min-width: 300px;
-//   max-width: 600px;
-//   animation: ${fadeIn} 1.5s ease;
-// `;
-
-// const SectionTitle = styled.h2`
-//   font-size: 2rem;
-//   margin-bottom: 1rem;
-//   color: #333;
-//   animation: ${fadeIn} 1.2s ease;
-// `;
-
-// const Text = styled.p`
-//   font-size: 1.1rem;
-//   line-height: 1.8;
-//   color: #555;
-//   animation: ${fadeIn} 1.4s ease;
-// `;
-
-// const IconWrapper = styled.div`
-//   display: flex;
-//   gap: 1rem;
-//   margin: 1rem 0;
-//   animation: ${fadeIn} 1.6s ease;
-
-//   svg {
-//     font-size: 2rem;
-//     color: #fbbf24;
-//   }
-// `;
-
-// const Slideshow = styled.div`
-//   display: flex;
-//   overflow-x: auto;
-//   gap: 1rem;
-//   padding: 1rem;
-//   animation: ${fadeIn} 1.8s ease;
-
-//   img {
-//     width: 300px;
-//     height: auto;
-//     border-radius: 10px;
-//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-//     transition: transform 0.3s;
-
-//     &:hover {
-//       transform: scale(1.05);
-//     }
-//   }
-// `;
-
-// // About Component
-// const AboutUs = () => {
-//   return (
-//     <AboutContainer>
-//       <HeroSection>
-//         <HeroTitle>About FAC Trade Track Ltd.</HeroTitle>
-//       </HeroSection>
-//       <Section>
-//         <ContentColumn>
-//           <SectionTitle>Who We Are</SectionTitle>
-//           <Text>
-//             FAC Trade Track Ltd. is a trailblazer in Africa’s journey toward sustainable development, redefining the future of transportation, infrastructure, and energy solutions across the continent. Rooted in innovation and sustainability, we are committed to delivering world-class services and technologies that elevate industries, empower communities, and drive economic transformation.
-//           </Text>
-//           <IconWrapper>
-//             <FaLeaf />
-//             <FaSolarPanel />
-//             <FaTruck />
-//             <FaChargingStation />
-//           </IconWrapper>
-//         </ContentColumn>
-//         <ImageColumn>
-//           <img src={car2} alt="Sustainable Development" />
-//         </ImageColumn>
-//       </Section>
-//       <Section>
-//         <ImageColumn>
-//           <img src={car3} alt="Global Partnerships" />
-//         </ImageColumn>
-//         <ContentColumn>
-//           <SectionTitle>Our Vision</SectionTitle>
-//           <Text>
-//             To pioneer transformative infrastructure, transportation, and clean energy projects that position Africa as a leader in sustainable development, fostering prosperity for future generations.
-//           </Text>
-//         </ContentColumn>
-//       </Section>
-//       <Slideshow>
-//         <img src={car1} alt="Car Slide 1" />
-//         <img src={car2} alt="Car Slide 2" />
-//         <img src={car3} alt="Car Slide 3" />
-//       </Slideshow>
-//     </AboutContainer>
-//   );
-// };
-
-// export default AboutUs;
-
-
-
-
-
-
-
-
-
-
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { FaLeaf, FaSolarPanel, FaTruck, FaChargingStation } from 'react-icons/fa';
-import car11 from '../Images/car11.jpg';
-import car12 from '../Images/car12.jpg';
-import car15 from '../Images/car15.png';
-import car14 from '../Images/car14.jpg';
-import car1 from '../Images/car1.jpeg'
-import { Context } from './Context'; // Assuming you have a theme context
-// import whoWeAre from '../Images/who we are.png'
-import whoWeAre from '../Images/whoweare2.jpeg'
-import strategic from '../Images/strategic2.jpeg'
-import scope from '../Images/scope.png'
 import { useSelector } from 'react-redux';
-
+import car1 from '../Images4/d6.jpg';
+import whoWeAre from '../Images4/dp14.png';
+import strategic from '../Images4/p21.jpeg';
+import scope from '../Images4/d14.png';
 
 // Animations
 const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 `;
 
 const slideBackground = keyframes`
@@ -219,7 +30,8 @@ const AboutContainer = styled.div`
 
 const HeroSection = styled.section`
   height: 50vh;
-  background: url(${car1}) no-repeat center center/cover;
+  background: url(${car1});
+  bakground-position:bottom;
   animation: ${slideBackground} 15s linear infinite;
   display: flex;
   align-items: center;
@@ -227,15 +39,9 @@ const HeroSection = styled.section`
   color: #fff;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 
-
-  @media (max-width:884px){
-    height:300px;
+  @media (max-width: 884px) {
+    height: 250px;
   }
-
-@media (max-width:884px){
-    height:250px;
-  }
-
 `;
 
 const HeroTitle = styled.h2`
@@ -244,45 +50,40 @@ const HeroTitle = styled.h2`
   text-align: center;
   padding: 1rem;
 
-  @media (max-width:768px){
-    font-size:2rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
-
 `;
 
 const Section = styled.section`
   padding: 3rem 2rem;
   display: flex;
-  // flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 884px) {
-    // flex-wrap: nowrap;
-    flex-direction:column;
+    flex-direction: column;
   }
 `;
 
 const ContentColumn = styled.div`
-
   min-width: 300px;
   max-width: 600px;
 `;
 
 const ImageColumn = styled.div`
   animation: ${fadeIn} 1.5s ease;
-  width:50%;
+  width: 50%;
 
-  @media (max-width:884px){
-    width:100%;
+  @media (max-width: 884px) {
+    width: 100%;
   }
-
 `;
 
 const Img = styled.img`
-  width:100%
-`
+  width: 100%;
+`;
 
 const SectionTitle = styled.h2`
   font-size: 2rem;
@@ -298,110 +99,67 @@ const Text = styled.p`
   animation: ${fadeIn} 1.4s ease;
 `;
 
-const IconWrapper = styled.div`
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-  animation: ${fadeIn} 1.6s ease;
-
-  svg {
-    font-size: 2rem;
-    color: ${({ theme }) => (theme === 'dark' ? '#fbbf24' : '#FF7133')};
-  }
-`;
-
-const Slideshow = styled.div`
-  display: flex;
-  // overflow-x: auto;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
-  gap: 1rem;
-  padding: 1rem;
-  animation: ${fadeIn} 1.8s ease;
-
-  img {
-    width: 300px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-`;
-
-// About Component
 const AboutUs = () => {
-  // const { theme } = useContext(Context); // Access theme context
-  const theme = useSelector((state)=>state.theme)
-
-
-    
+  const theme = useSelector((state) => state.theme);
 
   return (
-    <AboutContainer  theme={theme === true ? 'light' : 'dark'}>
+    <AboutContainer theme={theme === true ? 'light' : 'dark'}>
       <HeroSection>
-        <HeroTitle>About FAC Trade Track Ltd.</HeroTitle>
+        <HeroTitle>About Engr. Emmanuel Aniekwena</HeroTitle>
       </HeroSection>
+
       <Section>
         <ContentColumn>
-          <SectionTitle  theme={theme === true ? 'light' : 'dark'}>Who We Are</SectionTitle>
-          <Text  theme={theme === true ? 'light' : 'dark'}>
-            FAC Trade Track Ltd. is a trailblazer in Africa’s journey toward sustainable development, redefining the
-            future of transportation, infrastructure, and energy solutions across the continent.
+          <SectionTitle theme={theme === true ? 'light' : 'dark'}>Professional Summary</SectionTitle>
+          <Text theme={theme === true ? 'light' : 'dark'}>
+            I am an advanced project-certified manager and a results-driven Civil Engineer with over 15 years of
+            experience in infrastructure development, structural design, road construction, and project management.
+            As a visionary leader and the Managing Director/CEO of Emmyx Engineering Integrated Services Ltd and
+            Penuel Engineering Concept Ltd, I have successfully overseen large-scale construction projects across Nigeria.
           </Text>
-          <IconWrapper  theme={theme === true ? 'light' : 'dark'}>
-            <FaLeaf />
-            <FaSolarPanel />
-            <FaTruck />
-            <FaChargingStation />
-          </IconWrapper>
+          <Text theme={theme === true ? 'light' : 'dark'}>
+            I excel at managing multidisciplinary teams, ensuring regulatory compliance, and delivering high-quality
+            engineering solutions. I am a COREN-certified professional with a strong technical background in tools
+            such as AutoCAD, Civil Soft Quick Series, SAP2000, and Microsoft Project.
+          </Text>
+          <Text theme={theme === true ? 'light' : 'dark'}>
+            My passion lies in providing sustainable, cost-effective, and forward-thinking engineering solutions that
+            drive long-term value and impact.
+          </Text>
         </ContentColumn>
+
         <ImageColumn>
-          <Img src={whoWeAre} alt="Sustainable Development" />
+          <Img src={whoWeAre} alt="Engineer Summary" />
         </ImageColumn>
       </Section>
+
       <Section>
         <ContentColumn>
-          <SectionTitle  theme={theme === true ? 'light' : 'dark'}>Strategic Initiatives</SectionTitle>
-          <Text  theme={theme === true ? 'light' : 'dark'}>
-            <b>Renewable Energy Leadership:</b> FAC Trade Track Ltd. is championing renewable energy projects across
-            Africa, focusing on solar, wind, and CNG solutions to create cleaner cities.
-          </Text>
-          <Text  theme={theme === true ? 'light' : 'dark'}>
-            <b>Advanced Mobility Solutions:</b> From fuel-powered to electric and hybrid vehicles, we address the full
-            spectrum of mobility needs, ensuring the seamless movement of people and goods.
-          </Text>
-          <Text  theme={theme === true ? 'light' : 'dark'}>
-            <b>Economic Empowerment:</b> Through investments in natural rubber plantations and manufacturing plants, we
-            empower local communities.
+          <SectionTitle theme={theme === true ? 'light' : 'dark'}>Leadership & Vision</SectionTitle>
+          <Text theme={theme === true ? 'light' : 'dark'}>
+            Through Emmyx Engineering and Penuel Engineering Concept, I have led strategic projects that have transformed
+            rural and urban infrastructure. My leadership combines technical excellence, innovation, and a people-first approach.
           </Text>
         </ContentColumn>
+
         <ImageColumn>
-          <Img src={strategic} alt="Renewable Energy" />
+          <Img src={strategic} alt="Leadership & Vision" />
         </ImageColumn>
       </Section>
+
       <Section>
         <ImageColumn>
-          <Img src={scope} alt="Pan-African Scope" />
+          <Img src={scope} alt="Scope" />
         </ImageColumn>
+
         <ContentColumn>
-          <SectionTitle  theme={theme === true ? 'light' : 'dark'}>Our Pan-African Scope</SectionTitle>
-          <Text  theme={theme === true ? 'light' : 'dark'}>
-            Although headquartered in Nigeria, our operations span the entire African continent, delivering scalable
-            solutions tailored to diverse regional needs.
+          <SectionTitle theme={theme === true ? 'light' : 'dark'}>Continental Reach</SectionTitle>
+          <Text theme={theme === true ? 'light' : 'dark'}>
+            My influence and collaborative efforts in civil engineering span across West Africa,
+            contributing to sustainable development and resilient infrastructure in diverse environments.
           </Text>
         </ContentColumn>
       </Section>
-      <Slideshow>
-        <img src={car11} alt="Car Slide 1" />
-        <img src={car12} alt="Car Slide 2" />
-        <img src={car15} alt="Car Slide 3" />
-        <img src={car14} alt="Car Slide 3" />
-      </Slideshow>
     </AboutContainer>
   );
 };

@@ -9,6 +9,9 @@ import WhyPartnerWithUs from './WhyPartnerWithUs'
 import CarShowroomPage from './CarShowRoomPage'
 import Hero3 from './Hero3'
 import { useState, useEffect } from 'react'
+import CoreCompetencies from './CoreCompetence'
+import QualificationsSpace from './QualificationsSpace'
+import EducationSection from './EducationSection'
 
 
 const LandingPage = () => {
@@ -37,9 +40,13 @@ const LandingPage = () => {
 
       <Hero/>
       <AboutUsPreview/>
+      
+      <CoreCompetencies/>
+      <QualificationsSpace/>
+      <EducationSection/> 
       <CoreOfferingsPage/>
-      <Hero3/>
-      <CarShowroomPage/>
+      {/* <Hero3/> */}
+      {/* <CarShowroomPage/> */}
       <AutoTrendingSummary/>
       <WhyPartnerWithUs/>
 

@@ -5,14 +5,14 @@ import React, { useState, useEffect, useContext, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FaBars, FaTimes, FaCar } from 'react-icons/fa';
 import carlogo from '../Images/carlogo.jpeg';
-import smallCar from '../Images/car5Flip.png';
-import smallCar2 from '../Images/smallcar2.png';
+import smallCar from '../Images4/d15.png';
+import smallCar2 from '../Images4/d16.png';
 import smallCar3 from '../Images/smallcar3.png';
 import { Context } from './Context';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import faclogo2 from '../Images/faclogo2.png';
-import faclogo1 from '../Images/faclogo.jpeg'
+import faclogo2 from '../Images4/dp2.jpg';
+import faclogo1 from '../Images4/dp1.jpg'
 
 // Animation Keyframes
 const fadeIn = keyframes`
@@ -64,7 +64,8 @@ const Logo = styled.div`
   // color: ${({ theme }) => (theme === 'dark' ? '#fbbf24' : '#1e293b')};
   cursor: pointer;
   gap: 10px;
-
+  width:50px;
+  border-radius:50%;
   svg {
     margin-right: 0.5rem;
     animation: ${fadeIn} 1s ease;
@@ -118,7 +119,7 @@ const Nav = styled.nav`
 `;
 
 const NavItem = styled.a`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: ${({ theme }) => (theme === 'dark' ? '#ffffff' : 'orangered')};
   cursor: pointer;
@@ -144,7 +145,7 @@ const Hamburger = styled.div`
 const Img = styled.img`
   width: 150px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 50%;
 `;
 
 const FastCar = styled.img`
@@ -248,19 +249,39 @@ useEffect(()=>{
         <FastCar src={smallCar} alt="Fast Car" /> */}
           <StaggeredCar src={smallCar} alt="Fast Car 1" />
   <StaggeredCar src={smallCar2} alt="Fast Car 2" />
-  <StaggeredCar src={smallCar3} alt="Fast Car 3" />
+  {/* <StaggeredCar src={smallCar3} alt="Fast Car 3" /> */}
       </CarContainer>
       <Hamburger onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </Hamburger>
       <Nav isOpen={isMenuOpen} theme={theme === true ? 'light' : 'dark'} ref={sideMenuRef}>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() => {navigate('/');window.scroll(0,0);setIsMenuOpen(false)}}>Home</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() => {navigate('/aboutus');setIsMenuOpen(false)}}>About Us</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=> {navigate('/carshowroompage2');setIsMenuOpen(false)}}>Show Room</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=>{navigate('/servicesandsupport');setIsMenuOpen(false)}}>Services & Support</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=> {navigate('/brandandtechnology');setIsMenuOpen(false)}}>Brands & Technology</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() =>{ navigate("/autotrendingnews");setIsMenuOpen(false)}}>Auto Trending News</NavItem>
-        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=>{navigate("/contactus");setIsMenuOpen(false)}}>Contact Us</NavItem>
+        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() => {navigate('/');window.scroll(0,0);setIsMenuOpen(false)}} style={{
+  textDecoration: location.pathname === '/' ? 'underline' : 'none',
+  textDecorationColor: location.pathname === '/' ? '#FF7133' : 'inherit',
+  textDecorationThickness: location.pathname === '/' ? '3px' : 'initial'
+}}>Home</NavItem>
+        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() => {navigate('/aboutus');setIsMenuOpen(false)}} style={{
+  textDecoration: location.pathname === '/aboutus' ? 'underline' : 'none',
+  textDecorationColor: location.pathname === '/aboutus' ? '#FF7133' : 'inherit',
+  textDecorationThickness: location.pathname === '/aboutus' ? '3px' : 'initial'
+}}>About</NavItem>
+        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=> {navigate('/gallery');setIsMenuOpen(false)}}style={{
+  textDecoration: location.pathname === '/gallery' ? 'underline' : 'none',
+  textDecorationColor: location.pathname === '/gallery' ? '#FF7133' : 'inherit',
+  textDecorationThickness: location.pathname === '/gallery' ? '3px' : 'initial'
+}}>Gallery</NavItem>
+        {/* <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=>{navigate('/servicesandsupport');setIsMenuOpen(false)}} style={{textDecoration:location.pathname==='/aboutus'?"underline":""}}>Services & Support</NavItem> */}
+        {/* <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=> {navigate('/brandandtechnology');setIsMenuOpen(false)}} style={{textDecoration:location.pathname==='/aboutus'?"underline":""}}>Brands & Technology</NavItem> */}
+        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={() =>{ navigate("/blog");setIsMenuOpen(false)}} style={{
+  textDecoration: location.pathname === '/blog' ? 'underline' : 'none',
+  textDecorationColor: location.pathname === '/blog' ? '#FF7133' : 'inherit',
+  textDecorationThickness: location.pathname === '/blog' ? '3px' : 'initial'
+}}>My Blog</NavItem>
+        <NavItem theme={theme === true ? 'light' : 'dark'} onClick={()=>{navigate("/contactus");setIsMenuOpen(false)}} style={{
+  textDecoration: location.pathname === '/contactus' ? 'underline' : 'none',
+  textDecorationColor: location.pathname === '/contactus' ? '#FF7133' : 'inherit',
+  textDecorationThickness: location.pathname === '/contactus' ? '3px' : 'initial'
+}}>Contact</NavItem>
       </Nav>
     </HeaderContainer>
   );

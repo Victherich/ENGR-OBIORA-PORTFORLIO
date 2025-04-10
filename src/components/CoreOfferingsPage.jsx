@@ -11,18 +11,39 @@ import car3 from '../Images/car3.jpeg';
 import car4 from '../Images/car4.jpeg';
 import car5 from '../Images/car5.jpeg';
 import car6 from '../Images/car6.jpeg';
-import car11 from "../Images/car11.jpg";
-import car12 from "../Images/car12.jpg";
-import car13 from "../Images/car15.png";
-import car14 from "../Images/car14.jpg";
-import car15 from "../Images/car15.png";
-import car16 from "../Images/car16.jpg";
-import car17 from "../Images/car17.jpg";
-import car18 from "../Images/car18.jpg";
-import car19 from "../Images/car19.jpg";
-import car20 from "../Images/car20.jpg";
-import car21 from "../Images/car21.jpg";
-import car22 from "../Images/car22.jpg";
+import p1 from '../Images4/p1.jpeg';
+import p2 from '../Images4/p2.jpeg';
+import p3 from '../Images4/p3.jpeg';
+import p4 from '../Images4/p4.jpeg';
+import p5 from '../Images4/p5.jpeg';
+import p6 from '../Images4/p6.jpeg';
+import p7 from '../Images4/p7.jpeg';
+import p8 from '../Images4/p8.jpeg';
+import p9 from '../Images4/p9.jpeg';
+import p10 from '../Images4/p10.jpeg';
+import p11 from '../Images4/p11.jpeg';
+import p12 from '../Images4/p12.jpeg';
+import p13 from '../Images4/p13.jpeg';
+import p14 from '../Images4/p14.jpeg';
+import p15 from '../Images4/p15.jpeg';
+import p16 from '../Images4/p16.jpeg';
+import p17 from '../Images4/p17.jpeg';
+import p18 from '../Images4/p18.jpeg';
+import p19 from '../Images4/p19.jpeg';
+import p20 from '../Images4/p20.jpeg';
+import p21 from '../Images4/p21.jpeg';
+import p22 from '../Images4/p22.jpeg';
+import p23 from '../Images4/p23.jpeg';
+import p24 from '../Images4/p24.jpeg';
+import p25 from '../Images4/p25.jpeg';
+import p26 from '../Images4/p26.jpeg';
+import p27 from '../Images4/p27.jpeg';
+import p28 from '../Images4/p28.jpeg';
+import p29 from '../Images4/p29.jpeg';
+import p30 from '../Images4/p30.jpeg';
+import p31 from '../Images4/p31.jpeg';
+
+
 import { Context } from './Context';
 import tiresolution from '../Images/tire solution.png'
 import leasing from '../Images/leasing.png'
@@ -31,6 +52,7 @@ import media1 from '../media/media1.mp4'
 import media3 from '../media/media3.mp4'
 import { useSelector } from 'react-redux';
 import structure from '../Images/structure.jpeg'
+import Gallery from './Gallery';
 
 const lightTheme = {
   background: '#f8fafc',
@@ -294,63 +316,45 @@ const theme = useSelector((state)=>state.theme)
 
    
             <HeroSection theme={theme === true ? 'light' : 'dark'}>
-                  <HeroText theme={theme === true ? 'light' : 'dark'}>Our Core Offerings</HeroText>
+                  <HeroText theme={theme === true ? 'light' : 'dark'}>Explore My Project Gallery</HeroText>
                   <SlidingImages>
-                    <CarImage src={car11} alt="Car 11" />
-                    <CarImage src={car12} alt="Car 12" />
-                    <CarImage src={car13} alt="Car 13" />
-                    <CarImage src={car14} alt="Car 14" />
-                    <CarImage src={car15} alt="Car 15" />
-                    <CarImage src={car16} alt="Car 16" />
-                    <CarImage src={car17} alt="Car 17" />
-                    <CarImage src={car18} alt="Car 18" />
-                    <CarImage src={car19} alt="Car 19" />
-                    <CarImage src={car20} alt="Car 20" />
-                    <CarImage src={car21} alt="Car 21" />
-                    <CarImage src={car22} alt="Car 22" />
+                  <CarImage src={p1} alt="p1" />
+<CarImage src={p2} alt="p2" />
+<CarImage src={p3} alt="p3" />
+<CarImage src={p4} alt="p4" />
+<CarImage src={p5} alt="p5" />
+<CarImage src={p6} alt="p6" />
+<CarImage src={p7} alt="p7" />
+<CarImage src={p8} alt="p8" />
+<CarImage src={p9} alt="p9" />
+<CarImage src={p10} alt="p10" />
+<CarImage src={p11} alt="p11" />
+<CarImage src={p12} alt="p12" />
+<CarImage src={p13} alt="p13" />
+<CarImage src={p14} alt="p14" />
+<CarImage src={p15} alt="p15" />
+<CarImage src={p16} alt="p16" />
+<CarImage src={p17} alt="p17" />
+<CarImage src={p18} alt="p18" />
+<CarImage src={p19} alt="p19" />
+<CarImage src={p20} alt="p20" />
+<CarImage src={p21} alt="p21" />
+<CarImage src={p22} alt="p22" />
+<CarImage src={p23} alt="p23" />
+<CarImage src={p24} alt="p24" />
+<CarImage src={p25} alt="p25" />
+<CarImage src={p26} alt="p26" />
+<CarImage src={p27} alt="p27" />
+<CarImage src={p28} alt="p28" />
+<CarImage src={p29} alt="p29" />
+<CarImage src={p30} alt="p30" />
+<CarImage src={p31} alt="p31" />
+
                   </SlidingImages>
                 </HeroSection>
           
 
-                {offerings2.map((offering, index) => (
-          <Section key={index}>
-            <SectionImage>
-              {/* <img src={offering.image} alt={offering.title} /> */}
-              <Video autoPlay muted>
-    <source src={offering.media} type="video/mp4" />
-</Video>
-
-
-            </SectionImage>
-            <SectionContent>
-              <h2>
-                {offering.icon} {offering.title}
-              </h2>
-              {offering.details.map((detail, idx) => (
-                <p key={idx}>{detail}</p>
-              ))}
-            </SectionContent>
-          </Section>
-        ))} 
-
-
-        {/* Offerings Sections */}
-        {offerings.map((offering, index) => (
-          <Section key={index}>
-            <SectionImage>
-              <img src={offering.image} alt={offering.title} />
-            </SectionImage>
-            <SectionContent>
-              <h2>
-                {offering.icon} {offering.title}
-              </h2>
-              {offering.details.map((detail, idx) => (
-                <p key={idx}>{detail}</p>
-              ))}
-            </SectionContent>
-          </Section>
-        ))}
-
+<Gallery/>
 
       </Container>
     </ThemeProvider>

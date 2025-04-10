@@ -61,7 +61,7 @@ const Snowfall = () => {
       }, 5000);
     };
 
-    const interval = setInterval(createSnowflake, 100); // Create a snowflake every 100ms
+    const interval = setInterval(createSnowflake, 500); // Create a snowflake every 100ms
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);

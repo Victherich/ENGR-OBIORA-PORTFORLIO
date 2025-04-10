@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import { Context } from './Context'; // Assuming you have a theme context
 
 // Background Image
-import contactBackground from '../Images/car2.jpeg';
-import contactBackground2 from '../Images/car15.png';
-import carLogo from '../Images/carlogo.jpeg'
+import contactBackground from '../Images4/ct4.jpg';
+import contactBackground2 from '../Images4/ct3.jpg';
+import carLogo from '../Images4/dp1.jpg'
 import { useSelector } from 'react-redux';
 import Swal from 'sweetalert2'
 
@@ -200,7 +200,7 @@ const ContactUs = () => {
     <ContactContainer theme={theme === true ? 'light' : 'dark'} >
       <FormWrapper theme={theme === false ? darkTheme : lightTheme}>
       <Img src={carLogo} alt="carlogo"/>
-        <FormTitle theme={theme === false ? darkTheme : lightTheme}>Contact Us</FormTitle>
+        <FormTitle theme={theme === false ? darkTheme : lightTheme}>Contact Engr. Emmanuel</FormTitle>
         
         <form onSubmit={handleSubmit}>
           <InputGroup>
@@ -255,9 +255,9 @@ const ContactUs = () => {
         </form>
         <ContactWrap>
           
-          <p><strong>Address:</strong> Km 3 Apapa / Oshodi Exp. Way By Coker Bus stop.Coker Lagos Nigeria.</p>
-          <p><strong>Email:</strong> info@facafrica.com</p>
-          <p><strong>Phone:</strong> 08138842889</p>
+          {/* <p><strong>Address:</strong> Km 3 Apapa / Oshodi Exp. Way By Coker Bus stop.Coker Lagos Nigeria.</p> */}
+          <p><strong>Email:</strong> Emmyx2003@gmail.com | Emmyx2003@yahoo.com</p>
+          <p><strong>Phone:</strong> +234 803 476 6089</p>
         </ContactWrap>
       </FormWrapper>
     </ContactContainer>

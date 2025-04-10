@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { FaArrowRight, FaGlobe, FaLeaf, FaChartLine, FaTools } from 'react-icons/fa';
+// import { FaArrowRight, FaGlobe, FaLeaf,  } from 'react-icons/fa';
 import { Context } from './Context';
 import { useNavigate } from 'react-router-dom';
-import car10 from '../Images/car10.jpg'
-import car17 from '../Images/car17.jpg'
+import car10 from '../Images4/d7.jpg'
+import car17 from '../Images4/d11.jpeg'
 import { useSelector } from 'react-redux';
+// import relevant icons at top of file
+import {FaChartLine, FaUserTie, FaUsers, FaLightbulb, FaTasks, FaBuilding, FaProjectDiagram, FaCogs, FaTools, FaUniversity, FaLaptopCode } from 'react-icons/fa';
+
 
 // Define fade-in and slide animations
 const fadeIn = keyframes`
@@ -61,6 +64,7 @@ const Container = styled.div`
   // background-image: url(${({ theme }) => (theme === 'dark' ? car10 : car17)});
    background-image: url(${({ theme }) => theme.carT});
    background-position:center;
+   background-size:cover;
   padding: 2rem;
   color: ${({ theme }) => theme.text};
   animation: ${fadeIn} 1s ease;
@@ -163,54 +167,94 @@ const Button = styled.a`
   }
 `;
 
+
+
 const WhyPartnerWithUs = () => {
-  // const { theme } = useContext(Context); // Get the current theme from context
   const theme = useSelector((state)=>state.theme)
-  const navigate = useNavigate();
+  const isLight = theme === true;
+  const currentTheme = isLight ? lightTheme : darkTheme;
 
   return (
-    <Container theme={theme === true ? lightTheme : darkTheme}>
-      <TitleSection theme={theme === true ? lightTheme : darkTheme}>
-        <TitleText theme={theme === true ? 'light' : 'dark'}>Why Partner with FAC Trade Track Ltd.?</TitleText>
+    <Container theme={currentTheme}>
+      <TitleSection theme={currentTheme}>
+        <TitleText theme={isLight ? 'light' : 'dark'}>My Professional & Educational Highlights</TitleText>
       </TitleSection>
 
       <ContentSection>
-        <Column theme={theme === true ? 'light' : 'dark'}>
-          <IconWrapper theme={theme === true ? lightTheme : darkTheme}>
-            <FaGlobe />
-          </IconWrapper>
-          <Title theme={theme === true ? lightTheme : darkTheme}>Global Expertise, Local Impact</Title>
-          <Text>Combining international partnerships with deep local knowledge to deliver world-class projects.</Text>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaUserTie /></IconWrapper>
+          <Title theme={currentTheme}>Business Development</Title>
+          <Text>GANTTWORKS Business School</Text>
         </Column>
 
-        <Column theme={theme === true ? 'light' : 'dark'}>
-          <IconWrapper theme={theme === true ? lightTheme : darkTheme}>
-            <FaLeaf />
-          </IconWrapper>
-          <Title theme={theme === true ? lightTheme : darkTheme}>Sustainability Focus</Title>
-          <Text>A commitment to reducing carbon emissions and promoting renewable energy.</Text>
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaUsers /></IconWrapper>
+          <Title theme={currentTheme}>Team Building</Title>
+          <Text>GANTTWORKS Business School</Text>
         </Column>
 
-        <Column theme={theme === true ? 'light' : 'dark'}>
-          <IconWrapper theme={theme === true ? lightTheme : darkTheme}>
-            <FaChartLine />
-          </IconWrapper>
-          <Title theme={theme === true ? lightTheme : darkTheme}>Economic Growth Catalyst</Title>
-          <Text>Driving industrial growth, creating jobs, and fostering innovation.</Text>
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaLightbulb /></IconWrapper>
+          <Title theme={currentTheme}>Business Strategy</Title>
+          <Text>GANTTWORKS Business School</Text>
         </Column>
 
-        <Column theme={theme === true ? 'light' : 'dark'}>
-          <IconWrapper theme={theme === true ? lightTheme : darkTheme}>
-            <FaTools />
-          </IconWrapper>
-          <Title theme={theme === true ? lightTheme : darkTheme}>End-to-End Solutions</Title>
-          <Text>Offering a comprehensive suite of services, from vehicle manufacturing to infrastructure development.</Text>
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaTasks /></IconWrapper>
+          <Title theme={currentTheme}>Project Planning</Title>
+          <Text>Digital Regenesys</Text>
         </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaBuilding /></IconWrapper>
+          <Title theme={currentTheme}>Construction Project Scheduling</Title>
+          <Text>Digital Regenesys</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaChartLine /></IconWrapper>
+          <Title theme={currentTheme}>Strategic Planning</Title>
+          <Text>Digital Regenesys</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaUsers /></IconWrapper>
+          <Title theme={currentTheme}>Supervisory Skills</Title>
+          <Text>Digital Regenesys</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaTools /></IconWrapper>
+          <Title theme={currentTheme}>Construction Engineering</Title>
+          <Text>Chief Executive Officer at Emmyx Engineering Integrated Services Ltd</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaLaptopCode /></IconWrapper>
+          <Title theme={currentTheme}>SOLIDWORKS</Title>
+          <Text>Chief Executive Officer at Emmyx Engineering Integrated Services Ltd</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaCogs /></IconWrapper>
+          <Title theme={currentTheme}>Project Engineering</Title>
+          <Text>Chief Executive Officer at Emmyx Engineering Integrated Services Ltd</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaProjectDiagram /></IconWrapper>
+          <Title theme={currentTheme}>Project Management</Title>
+          <Text>Chief Executive Officer at Emmyx Engineering Integrated Services Ltd</Text>
+        </Column>
+
+        <Column theme={isLight ? 'light' : 'dark'}>
+          <IconWrapper theme={currentTheme}><FaUniversity /></IconWrapper>
+          <Title theme={currentTheme}>Program Management</Title>
+          <Text>European-American University</Text>
+        </Column>
+
       </ContentSection>
-
-      {/* <Button theme={theme === true ? lightTheme : darkTheme} onClick={() => navigate('/aboutus')}>
-        View More <FaArrowRight />
-      </Button> */}
     </Container>
   );
 };

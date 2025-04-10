@@ -7,41 +7,47 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';  
-import car1 from '../Images/car1.jpeg';
-import car2 from '../Images/car2.jpeg';
-import car3 from '../Images/car3.jpeg';
-import car4 from '../Images/car4.jpeg';
-import car5 from '../Images/car5.jpeg';
-import car6 from '../Images/car6.jpeg';
-import car7 from '../Images/car7.jpeg';
-import car10 from "../Images/car10.jpg";
-import car11 from "../Images/car11.jpg";
-import car12 from "../Images/car12.jpg";
-import car13 from "../Images/car15.png";
-import car14 from "../Images/car14.jpg";
-import car15 from "../Images/car15.png";
-import car16 from "../Images/car16.jpg";
-import car17 from "../Images/car17.jpg";
-import car18 from "../Images/car18.jpg";
-import car19 from "../Images/car19.jpg";
-import car20 from "../Images/car20.jpg";
-import car21 from "../Images/car21.jpg";
-import car22 from "../Images/car22.jpg";
+import car1 from '../Images4/p1.jpeg';
+import car2 from '../Images4/p2.jpeg';
+import car3 from '../Images4/p3.jpeg';
+import car4 from '../Images4/p4.jpeg';
+import car5 from '../Images4/p5.jpeg';
+import car6 from '../Images4/p6.jpeg';
+import car7 from '../Images4/p7.jpeg';
+import car8 from '../Images4/p8.jpeg';
+import car9 from '../Images4/p9.jpeg';
+import car10 from '../Images4/d5.jpg';
+import car11 from '../Images4/p11.jpeg';
+import car12 from '../Images4/p12.jpeg';
+import car13 from '../Images4/p13.jpeg';
+import car14 from '../Images4/p14.jpeg';
+import car15 from '../Images4/p15.jpeg';
+import car16 from '../Images4/p16.jpeg';
+import car17 from '../Images4/p17.jpeg';
+import car18 from '../Images4/p18.jpeg';
+import car19 from '../Images4/p19.jpeg';
+import car20 from '../Images4/p20.jpeg';
+import car21 from '../Images4/p21.jpeg';
+import car22 from '../Images4/p22.jpeg';
+
+// import car1 from '../Images4/p1.jpeg';
 import { Context } from './Context';
 import { useContext } from 'react';
 import { useSelector } from 'react-redux';
 
 // Styled Components
 const HeroContainer = styled.section`
+border-top:1px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 200px;
- background-image: url(${({ theme }) => (theme === 'dark' ? car5 : car22)});
+//  background-image: url(${({ theme }) => (theme === 'dark' ? car10 : car10)});
 background-position:center;
 background-size:cover;
-  // background: linear-gradient(90deg, #0f172a, #1e293b);
+
+  background: ${({ theme }) => (theme === 'dark' ? 'gray' : 'lightgray')};
   overflow: hidden;
   color: #ffffff;
 `;
@@ -99,6 +105,7 @@ const CarImage = styled.img`
   margin: 0 2rem;
   transition: transform 0.3s;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius:10px;
 
   &:hover {
     transform: scale(1.1);

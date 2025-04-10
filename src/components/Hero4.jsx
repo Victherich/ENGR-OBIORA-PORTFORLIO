@@ -24,32 +24,37 @@ import car21 from "../Images/car21.jpg";
 import car22 from "../Images/car22.jpg";
 import { useLocation } from 'react-router-dom';
 import globe from '../Images/globe.gif'
-import car2d from '../Images/car2d.jpeg'
-import car3d from '../Images/car3d.jpeg'
-import car4d from '../Images/car4d.jpeg'
-import car5d from "../Images/car5d.jpeg"
-import car6d from "../Images/car6d.jpeg"
-import car7d from "../Images/car7d.jpeg"
-import car11d from "../Images/car11d.jpg"
-// import car12d from "../Images/car12d.png"
-import car14d from "../Images/car14d.jpg"
-import car15d from "../Images/car15d.png"
-import car16d from "../Images/car16d.jpg";
-import car17d from "../Images/car17d.jpg";
-import car18d from "../Images/car18d.jpg";
-import car19d from "../Images/car19d.jpg";
-import car20d from "../Images/car20d.jpg";
-import car21d from "../Images/car21d.jpg";
-import car22d from "../Images/car22d.jpg";
-import car23d from "../Images/car23d.jpeg";
-import car24d from "../Images/car24d.jpeg";
-import car25d from "../Images/car25d.jpeg";
-import car26d from "../Images/car26d.jpeg";
-import car27d from "../Images/car27d.jpeg";
-import car28d from "../Images/car28d.jpeg";
-import car29d from "../Images/car29d.jpeg";
-import car30d from "../Images/car30d.jpeg";
-import car31d from "../Images/car31d.jpeg";
+import p1 from '../Images4/p1.jpeg';
+import p2 from '../Images4/p2.jpeg';
+import p3 from '../Images4/p3.jpeg';
+import p4 from '../Images4/p4.jpeg';
+import p5 from '../Images4/p5.jpeg';
+import p6 from '../Images4/p6.jpeg';
+import p7 from '../Images4/p7.jpeg';
+import p8 from '../Images4/p8.jpeg';
+import p9 from '../Images4/p9.jpeg';
+import p10 from '../Images4/p10.jpeg';
+import p11 from '../Images4/p11.jpeg';
+import p12 from '../Images4/p12.jpeg';
+import p13 from '../Images4/p13.jpeg';
+import p14 from '../Images4/p14.jpeg';
+import p15 from '../Images4/p15.jpeg';
+import p16 from '../Images4/p16.jpeg';
+import p17 from '../Images4/p17.jpeg';
+import p18 from '../Images4/p18.jpeg';
+import p19 from '../Images4/p19.jpeg';
+import p20 from '../Images4/p20.jpeg';
+import p21 from '../Images4/p21.jpeg';
+import p22 from '../Images4/p22.jpeg';
+import p23 from '../Images4/p23.jpeg';
+import p24 from '../Images4/p24.jpeg';
+import p25 from '../Images4/p25.jpeg';
+import p26 from '../Images4/p26.jpeg';
+import p27 from '../Images4/p27.jpeg';
+import p28 from '../Images4/p28.jpeg';
+import p29 from '../Images4/p29.jpeg';
+import p30 from '../Images4/p30.jpeg';
+import p31 from '../Images4/p31.jpeg';
 import car32d from "../Images/car32d.jpeg";
 import car33d from "../Images/car33d.jpeg";
 
@@ -135,13 +140,14 @@ const Slider = styled.div`
 const CarImage = styled.img`
   width: 100vw;
   // height: 100vh;
-  // object-fit: cover;
+  object-fit: cover;
   // object-position: bottom;  // This will align the image's bottom edge to the container's bottom edge
   flex-shrink: 0;
 `;
 
 const Img = styled.img`
     border-radius:50%;
+    // object-fit:cover:
 `
 
 // Hero Component
@@ -151,47 +157,7 @@ const Hero4 = () => {
   const locattion = useLocation();
 
   const carImages = [
-    car2d,
-    car3d,
-    car4d,
-    car5d,
-    car6d,
-    car7d,
-    car11d,
-    // car12d,
-    car14d,
-    car15d,
-    car16d,
-    car17d,
-    car18d,
-    car19d,
-    car20d,
-    car21d,
-    car22d,
-    car23d,
-    car24d,
-    car25d,
-    car26d,
-    car27d,
-    car28d,
-    car29d,
-    car30d,
-    car31d,
-  //   carnow1,
-  //   carnow2,
-  //   carnow3,
-  //   carnow4,
-  //   carnow5,
-  //   carnow6,
-  // carnow7,
-  // carnow8,
-  // carnow9,
-  // carnow10,
-    // car32d,
-    // car33d,
-    // car35d,
-    // car1, car2, car3, car4, car5, car6, car7,car11,car12,car13,car14,car15,car16,car17,car18,car19,car20,car21,car22
-  ];
+    p1,p2, p3, p4, p5, p6, p7, p8, p9, p10, p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22, p23, p24, p25, p26, p27, p28, p29, p30, p30, p31];
 
 
 useEffect(() => {
@@ -213,8 +179,8 @@ useEffect(() => {
     <HeroContainer>
       <HeroContent>
         {locattion.pathname==='/carshowroompage2'&&<HeroTitle>OUR SHOW ROOM</HeroTitle>}
-        {locattion.pathname==='/autotrendingnews'&&<HeroTitle>AUTO <br/> TRENDING NEWS </HeroTitle>}
-        {locattion.pathname==='/autotrendingnews'&&<Img src={globe} alt="globe"/>}
+        <HeroTitle>MY PROJECTS <br/> GALLERY </HeroTitle>
+        {/* {locattion.pathname==='/autotrendingnews'&&<Img src={globe} alt="globe"/>} */}
         {/* <HeroSubtitle>Explore our innovative cars designed for performance, luxury, and sustainability. Your dream car awaits!</HeroSubtitle> */}
         {/* <HeroSubtitle>Transforming Africa’s Transportation, Infrastructure & Energy Landscape.</HeroSubtitle> */}
     

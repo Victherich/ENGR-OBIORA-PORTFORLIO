@@ -2,19 +2,24 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';  
-import car1 from '../Images/car1.jpeg';
-import car2 from '../Images/car2.jpeg';
-import car3 from '../Images/car3.jpeg';
-import car4 from '../Images/car4.jpeg';
-import car5 from '../Images/car5.jpeg';
+import car1 from '../Images4/d7.jpg';
+import car2 from '../Images4/d5.jpg';
+import car3 from '../Images4/d6.jpg';
+import car4 from '../Images4/d11a.jpeg';
+import car5 from '../Images4/d12a.jpeg';
 import car6 from '../Images/car6.jpeg';
 import car7 from '../Images/car7.jpeg';
 import car12 from '../Images/car12.jpg';
-import car13 from '../Images/car15.png';
-import car22 from '../Images/car22.jpg';
-import car21 from '../Images/car21.jpg';
-import car18 from '../Images/car18.jpg';
+import car13 from '../Images4/d2.jpg';
+import car22 from '../Images4/p9.jpeg'; 
+import car21 from '../Images4/p10.jpeg';
+import car18 from '../Images4/d4.jpg';
+import d11 from '../Images4/d11.jpeg'
+import d12 from '../Images4/d12.jpeg'
+
 import { useSelector } from 'react-redux';
+import dp1 from '../Images4/dp12.jpeg';
+import dp2 from '../Images4/dp2.jpg';
 
 
 
@@ -37,14 +42,29 @@ const HeroContent = styled.div`
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  width:80%;
+  // background:rgba(0,0,0,0.5);
+  // padding:50px 50px;
+
+  img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    border:10px solid white;
+    object-fit:cover;
+  }
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fbbf24;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   opacity: 0;
   transform: translateY(50px);
   animation: ${(props) => props.isVisible ? 'flyInFromBottom 3s ease-out forwards' : 'none'};
@@ -71,13 +91,15 @@ const HeroTitle = styled.h1`
 
 const HeroSubtitle = styled.p`
   font-size: 1.5rem;
+  font-weight:bold;
   line-height: 1.5;
   max-width: 600px;
+  text-align:left;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(-50px);
   animation: ${(props) => props.isVisible ? 'flyInFromTop 1s ease-out forwards' : 'none'};
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
@@ -121,8 +143,8 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const theme = useSelector((state)=>state.theme)
 
-  const carImages1 = [car1, car2, car3, car4, car5, car6, car7];
-  const carImages2 = [ car13, car22, car21, car18];
+  const carImages1 = [car1, car2, car3, car4, car5 ];
+  const carImages2 = [ car13,  car21, car18,d11, d12];
 
   const [carImages,setCarImages]=useState(carImages2)
 
@@ -173,10 +195,16 @@ const Hero = () => {
   return (
     <HeroContainer ref={sliderRef}>
       <HeroContent>
-        <HeroTitle isVisible={isVisible}>FAC TRADE TRACK LTD</HeroTitle>
+        <img src={dp1} alt="profile"/>
+        <div style={{backgroundColor:"rgba(0,0,0,0.5)", borderRadius:"10px", padding:"5px"}}>
+        <HeroTitle isVisible={isVisible}>ENGR. ANIEKWENA (OBIORA) EMMANUEL</HeroTitle>
         <HeroSubtitle isVisible={isVisible}>
-          Transforming Africa’s Transportation, Infrastructure & Energy Landscape.
+        D.SC, B.ENG, FIMC, CMC, ASCE, APM,COREN, MNSE,NICE
         </HeroSubtitle>
+        <HeroSubtitle isVisible={isVisible} style={{fontSize:"0.8rem", fontWeight:"500", textAlign:"left"}}>
+        ☎ +234 812 345 6789 <br/>📨 Emmyx2003@gmail.com <br/>📨 Emmyx2003@yahoo.com
+        </HeroSubtitle>
+        </div>
       </HeroContent>
       <Slider
         style={{ transform: `translateX(-${position * 100}vw)` }}
