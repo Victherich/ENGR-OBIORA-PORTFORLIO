@@ -31,9 +31,27 @@ const Container = styled.div`
   background-position: center;
   background-attachment: fixed; /* This creates the parallax effect */
   min-height: 100vh;
+  position:relative;
+
+
+  &::before{
+  content:"";
+  top:0;
+  left:0;
+  position:absolute;
+  background-color:rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+
+  }
+
 `;
 
+
+
+
 const TitleText = styled.h2`
+ position:relative;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -45,6 +63,7 @@ const TitleText = styled.h2`
 
 
 const Grid = styled.div`
+ position:relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2rem;
