@@ -195,6 +195,11 @@ const Container = styled.section`
   color: ${({ theme }) => (theme === "dark" ? "#f8fafc" : "#0f172a")};
   padding: 4rem 2rem;
   font-family: 'Segoe UI', sans-serif;
+
+
+  @media(max-width:884px){
+    padding: 40px 10px;
+  }
 `;
 
 const Title = styled.h2`

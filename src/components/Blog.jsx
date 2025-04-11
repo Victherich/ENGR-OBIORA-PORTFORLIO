@@ -35,9 +35,11 @@ const HeroSection = styled.section`
   text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
   color: white;
 
-  @media (max-width: 768px) {
-    height: 35vh;
+  @media (max-width: 320px) {
+    height: 60vh;
   }
+
+ 
 `;
 
 const HeroTitle = styled.h1`
@@ -54,6 +56,17 @@ const BlogGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 2rem;
+
+
+  @media(max-width:428px){
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding:1rem;
+  }
+
+ @media(max-width:320px){
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
 `;
 
 const BlogCard = styled.div`
@@ -69,6 +82,11 @@ const BlogCard = styled.div`
 
   &:hover {
     transform: translateY(-8px);
+  }
+
+
+  @media(max-width:428px){
+  padding:10px;
   }
 `;
 

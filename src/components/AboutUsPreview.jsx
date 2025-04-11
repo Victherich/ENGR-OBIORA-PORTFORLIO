@@ -324,6 +324,13 @@ const TitleText = styled.h2`
   color: ${({ theme }) => (theme === 'dark' ? 'white' : '#FF7133')};
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
   animation: ${fadeIn} 1s ease-in;
+
+
+  @media(max-width:884px){
+    // text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+  }
 `;
 
 const CubeContainer = styled.div`
@@ -417,6 +424,13 @@ width:100%;
 justify-content:center;
 align-items:center;
 gap:100px;
+
+
+
+@media(max-width:884px){
+  flex-direction:column;
+  gap:50px;
+}
 `
 
 // Cube face transforms

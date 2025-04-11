@@ -191,7 +191,7 @@ const LightboxOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 99999999999999999999999999999999999999999999999999999;
   overflow-y:scroll;
 `;
 
@@ -246,6 +246,11 @@ const Button = styled.a`
 
   svg {
     margin-left: 0.5rem;
+  }
+
+
+  @media(max-width:884px){
+    margin-top:20px;
   }
 `;
 

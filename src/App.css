@@ -65,7 +65,7 @@
 
 .WhatsAppIcon3{
   position: fixed;
-  z-index: 99;
+  z-index: 99999999999999999999999999999999;
  bottom: 22%;
  right: 2%; 
   width: 100px;
@@ -76,7 +76,7 @@
 
 .WhatsAppIcon4{
   position: fixed;
-  z-index: 99;
+  z-index: 9999999999999999999999999999999;
  bottom: 25%;
  right: 2%; 
   /* width: 50px; */

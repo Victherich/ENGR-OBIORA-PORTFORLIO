@@ -47,7 +47,7 @@ const HeaderContainer = styled.header`
   animation: ${fadeIn} 0.8s ease;
   position: fixed;
   top: 0px;
-  z-index: 999;
+  z-index: 9999999999;
   width: 100%;
 
   @media (max-width: 768px) {

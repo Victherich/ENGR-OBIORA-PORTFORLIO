@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useSelector } from 'react-redux';
 import car1 from '../Images4/d6.jpg';
-import whoWeAre from '../Images4/dp14.png';
+import whoWeAre from '../Images4/dp14b.png';
 import strategic from '../Images4/p21.jpeg';
 import scope from '../Images4/d14.png';
 
@@ -129,7 +129,7 @@ const AboutUs = () => {
         </ContentColumn>
 
         <ImageColumn>
-          <Img src={whoWeAre} alt="Engineer Summary" />
+          <Img  style={{borderRadius:"50%", width:"80%"}} src={whoWeAre} alt="Engineer Summary" />
         </ImageColumn>
       </Section>
 

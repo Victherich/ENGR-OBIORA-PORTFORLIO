@@ -33,6 +33,11 @@ const HeroContainer = styled.section`
   background: linear-gradient(90deg, #0f172a, #1e293b);
   overflow: hidden;
   color: #ffffff;
+
+
+  // @media(max-width:320px){
+  //   height:700px;
+  // }
 `;
 
 const HeroContent = styled.div`
@@ -57,6 +62,28 @@ const HeroContent = styled.div`
     border:10px solid white;
     object-fit:cover;
   }
+
+
+  @media(max-width:884px){
+    flex-direction:column;
+gap:10px;
+
+    img{
+      width:250px;
+      height:250px;
+      margin-top:100px;
+      
+    }
+  }
+
+   @media(max-width:320px){
+    
+
+   img{
+    width:150px;
+    height:150px;
+   }
+  }
 `;
 
 const HeroTitle = styled.h1`
@@ -75,6 +102,10 @@ const HeroTitle = styled.h1`
 
    @media (max-width: 428px) {
     font-size: 1.5rem;
+  }
+
+  @media (max-width:320px){
+  font-size:1.3rem;
   }
 
   @keyframes flyInFromBottom {

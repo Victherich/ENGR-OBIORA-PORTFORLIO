@@ -65,6 +65,12 @@ const FormTitle = styled.h2`
   color: ${({ theme }) => theme.primary};
   margin-bottom: 1rem;
   font-weight: bold;
+
+
+
+  @media(max-width:428px){
+  font-size:1.5rem;
+  }
 `;
 
 const InputGroup = styled.div`
@@ -173,7 +179,7 @@ const ContactUs = () => {
       Swal.showLoading();
   
     try {
-      const response = await fetch("https://facafrica.com/api/contact_form_endpoint.php", {
+      const response = await fetch("https://hotsalesng.com/api_obi/contact_form_endpoint.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -184,7 +190,7 @@ const ContactUs = () => {
       const data = await response.json();
   
       if (data.success) {
-        Swal.fire({text:"✅ Your message has been sent successfully!"});
+        Swal.fire({text:"✅ Thanks for your message, I shall get back to you shortly", icon:"success"});
         setFormData({ name: "", email: "", phone: "", message: "" }); // Clear form
       } else {
         Swal.fire({text:`❌ Error: ${data.error}`});
@@ -200,7 +206,7 @@ const ContactUs = () => {
     <ContactContainer theme={theme === true ? 'light' : 'dark'} >
       <FormWrapper theme={theme === false ? darkTheme : lightTheme}>
       <Img src={carLogo} alt="carlogo"/>
-        <FormTitle theme={theme === false ? darkTheme : lightTheme}>Contact Engr. Emmanuel</FormTitle>
+        <FormTitle theme={theme === false ? darkTheme : lightTheme}>Contact the Engineer</FormTitle>
         
         <form onSubmit={handleSubmit}>
           <InputGroup>

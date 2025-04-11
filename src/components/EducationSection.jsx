@@ -63,6 +63,12 @@ const Section = styled.div`
   background: ${({ theme }) => (theme === 'dark' ? '#0f172a' : '#f8fafc')};
   min-height: 100vh;
   transition: background 0.3s ease;
+
+
+@media(max-width:884px){
+  padding:20px 5px;
+}
+
 `;
 
 const Title = styled.h2`
@@ -102,6 +108,11 @@ const Card = styled.div`
       theme === 'dark'
         ? '0 15px 30px rgba(255, 255, 255, 0.1)'
         : '0 15px 30px rgba(0, 0, 0, 0.15)'};
+  }
+
+
+  @media(max-width:884px){
+    padding:15px;
   }
 `;
 

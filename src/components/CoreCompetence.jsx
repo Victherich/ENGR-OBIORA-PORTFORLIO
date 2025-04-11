@@ -59,6 +59,11 @@ const TitleText = styled.h2`
   color: ${({ theme }) => (theme === 'dark' ? 'white' : '#FF7133')};
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 //   animation: ${fadeIn} 1s ease-in;
+
+@media(max-width:884px){
+  font-size:2rem;
+}
+
 `;
 
 

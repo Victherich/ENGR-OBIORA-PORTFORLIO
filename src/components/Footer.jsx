@@ -313,7 +313,7 @@ const Footer = () => {
         <ContactInfo>
           <p><Strong theme={theme === true ? 'light' : 'dark'}>Email:</Strong> Emmyx2003@gmail.com | Emmyx2003@yahoo.com</p>
           <p><Strong theme={theme === true ? 'light' : 'dark'}>Phone:</Strong> +234 803 476 6089</p>
-          <p><Strong theme={theme === true ? 'light' : 'dark'}>Location:</Strong> Lagos, Nigeria</p>
+          {/* <p><Strong theme={theme === true ? 'light' : 'dark'}>Location:</Strong> Lagos, Nigeria</p> */}
         </ContactInfo>
 
         <FooterLinks>
