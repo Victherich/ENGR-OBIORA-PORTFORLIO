@@ -105,7 +105,7 @@ const AboutUs = () => {
   return (
     <AboutContainer theme={theme === true ? 'light' : 'dark'}>
       <HeroSection>
-        <HeroTitle>About Engr. Emmanuel Aniekwena</HeroTitle>
+        <HeroTitle>About ENGR (DR) EMMANUEL O. ANIEKWENA</HeroTitle>
       </HeroSection>
 
       <Section>

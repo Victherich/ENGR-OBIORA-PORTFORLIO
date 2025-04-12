@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const MySlice = createSlice({
   name: "user",
   initialState: {
-    theme: true, // Initial state for theme
+    theme: false, // Initial state for theme
     adminInfo: null,
     adminToken: null,
     userInfo: null,

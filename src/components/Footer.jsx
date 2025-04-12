@@ -304,7 +304,7 @@ const Footer = () => {
   return (
     <FooterContainer theme={theme === true ? 'light' : 'dark'}>
       <FooterContent>
-        <FooterTitle theme={theme === true ? 'light' : 'dark'}>ENGR. ANIEKWENA (OBIORA) EMMANUEL</FooterTitle>
+        <FooterTitle theme={theme === true ? 'light' : 'dark'}>ENGR (DR) EMMANUEL O. ANIEKWENA</FooterTitle>
         <FooterDescription>
           A visionary leader in Civil Engineering, Infrastructure Development, and Project Management.
           Passionate about delivering sustainable and cost-effective engineering solutions.
@@ -312,8 +312,9 @@ const Footer = () => {
 
         <ContactInfo>
           <p><Strong theme={theme === true ? 'light' : 'dark'}>Email:</Strong> Emmyx2003@gmail.com | Emmyx2003@yahoo.com</p>
-          <p><Strong theme={theme === true ? 'light' : 'dark'}>Phone:</Strong> +234 803 476 6089</p>
-          {/* <p><Strong theme={theme === true ? 'light' : 'dark'}>Location:</Strong> Lagos, Nigeria</p> */}
+
+          <p><Strong theme={theme === true ? 'light' : 'dark'}>Phone:</Strong> +1 808 673 8702 | +234 803 476 6089</p>
+          <p><Strong theme={theme === true ? 'light' : 'dark'}>Location:</Strong> 907 24th Str Canyon TX USA</p>
         </ContactInfo>
 
         <FooterLinks>
@@ -326,15 +327,15 @@ const Footer = () => {
         </FooterLinks>
 
         <SocialIcons theme={theme === true ? 'light' : 'dark'}>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://web.facebook.com/@emmanuel.aniekwena.3" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+          {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a> */}
+          <a href="https://www.instagram.com/Engr_emmyx/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://www.linkedin.com/in/aniekwena-emmanuel-55026b310/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         </SocialIcons>
       </FooterContent>
 
       <Copyright>
-        © {new Date().getFullYear()} ENGR. ANIEKWENA (OBIORA) EMMANUEL. All Rights Reserved.
+        © {new Date().getFullYear()} ENGR (DR) EMMANUEL O. ANIEKWENA. All Rights Reserved.
       </Copyright>
     </FooterContainer>
   );

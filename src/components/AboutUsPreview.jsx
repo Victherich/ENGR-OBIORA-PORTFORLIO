@@ -278,7 +278,7 @@ import { useSelector } from 'react-redux';
 import car10 from "../Images4/d14.png";
 import car11 from "../Images4/dp12.jpeg";
 import car12 from "../Images4/dp13.jpeg";
-import car13 from "../Images4/dp1.jpg";
+import car13 from "../Images4/dpa3.jpg";
 import car14 from "../Images4/dp2.jpg";
 import car15 from "../Images4/dp12.jpeg";
 

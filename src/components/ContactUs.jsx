@@ -261,9 +261,10 @@ const ContactUs = () => {
         </form>
         <ContactWrap>
           
-          {/* <p><strong>Address:</strong> Km 3 Apapa / Oshodi Exp. Way By Coker Bus stop.Coker Lagos Nigeria.</p> */}
+          <p><strong>Address:</strong> 907 24th Str Canyon TX USA</p>
           <p><strong>Email:</strong> Emmyx2003@gmail.com | Emmyx2003@yahoo.com</p>
-          <p><strong>Phone:</strong> +234 803 476 6089</p>
+
+          <p><strong>Phone:</strong> +1 808 673 8702  | +234 803 476 6089</p>
         </ContactWrap>
       </FormWrapper>
     </ContactContainer>

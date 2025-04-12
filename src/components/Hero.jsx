@@ -18,7 +18,7 @@ import d11 from '../Images4/d11.jpeg'
 import d12 from '../Images4/d12.jpeg'
 
 import { useSelector } from 'react-redux';
-import dp1 from '../Images4/dp12.jpeg';
+import dp1 from '../Images4/dpa1.jpeg';
 import dp2 from '../Images4/dp2.jpg';
 
 
@@ -228,12 +228,15 @@ const Hero = () => {
       <HeroContent>
         <img src={dp1} alt="profile"/>
         <div style={{backgroundColor:"rgba(0,0,0,0.5)", borderRadius:"10px", padding:"5px"}}>
-        <HeroTitle isVisible={isVisible}>ENGR. ANIEKWENA (OBIORA) EMMANUEL</HeroTitle>
+        <HeroTitle isVisible={isVisible}>ENGR (DR) EMMANUEL O. ANIEKWENA</HeroTitle>
         <HeroSubtitle isVisible={isVisible}>
         D.SC, B.ENG, FIMC, CMC, ASCE, APM,COREN, MNSE,NICE
         </HeroSubtitle>
         <HeroSubtitle isVisible={isVisible} style={{fontSize:"0.8rem", fontWeight:"500", textAlign:"left"}}>
-        ☎ +234 812 345 6789 <br/>📨 Emmyx2003@gmail.com <br/>📨 Emmyx2003@yahoo.com
+        ☎ +1 808 673 8702
+        <br/>
+        ☎ +234 803 476 6089<br/>📨 Emmyx2003@gmail.com<br/>📨 Emmyx2003@yahoo.com<br/>
+         🏢 907 24th Str Canyon TX USA
         </HeroSubtitle>
         </div>
       </HeroContent>
