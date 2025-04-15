@@ -37,6 +37,30 @@ import p29 from '../Images4/p29.jpeg';
 import p30 from '../Images4/p30.jpeg';
 import p31 from '../Images4/p31.jpeg';
 
+
+import gg1 from '../Images4/gg (1).jpeg';
+import gg2 from '../Images4/gg (2).jpeg';
+import gg3 from '../Images4/gg (3).jpeg';
+import gg4 from '../Images4/gg (4).jpeg';
+import gg5 from '../Images4/gg (5).jpeg';
+import gg6 from '../Images4/gg (6).jpeg';
+import gg7 from '../Images4/gg (7).jpeg';
+import gg8 from '../Images4/gg (8).jpeg';
+import gg9 from '../Images4/gg (9).jpeg';
+import gg10 from '../Images4/gg (10).jpeg';
+import gg11 from '../Images4/gg (11).jpeg';
+import gg12 from '../Images4/gg (12).jpeg';
+import gg13 from '../Images4/gg (13).jpeg';
+import gg14 from '../Images4/gg (14).jpeg';
+import gg15 from '../Images4/gg (15).jpeg';
+import gg16 from '../Images4/gg (16).jpeg';
+import gg17 from '../Images4/gg (17).jpeg';
+import gg18 from '../Images4/gg (18).jpeg';
+import gg19 from '../Images4/gg (19).jpeg';
+import gg20 from '../Images4/gg (20).jpeg';
+
+
+
 import Hero4 from "./Hero4";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -255,38 +279,60 @@ const Button = styled.a`
 `;
 
 const images = [
-    { src: p1, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p2, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
-    { src: p3, columnSpan: "span 1", rowSpan: "span 1", border: "10px", border2: "1px" },
-    { src: p4, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
-    { src: p5, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
-    { src: p6, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
-    { src: p7, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
-    { src: p8, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p9, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
-    { src: p10, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
-    { src: p11, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p12, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p13, columnSpan: "span 1", rowSpan: "span 1", border: "25px", border2: "1px" },
-    { src: p14, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
-    { src: p15, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
-    { src: p16, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
-    { src: p17, columnSpan: "span 2", rowSpan: "span 1", border: "25px", border2: "1px" },
-    { src: p18, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p19, columnSpan: "span 1", rowSpan: "span 1", border: "10px", border2: "1px" },
-    { src: p20, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
-    { src: p21, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
-    { src: p22, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
-    { src: p23, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p24, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
-    { src: p25, columnSpan: "span 2", rowSpan: "span 1", border: "25px", border2: "1px" },
-    { src: p26, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
-    { src: p27, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
-    { src: p28, columnSpan: "span 1", rowSpan: "span 2", border: "15px", border2: "1px" },
-    { src: p29, columnSpan: "span 1", rowSpan: "span 1", border: "25px", border2: "1px" },
-    { src: p30, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
-    { src: p31, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
-  ];
+  { src: p1, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p2, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: p3, columnSpan: "span 1", rowSpan: "span 1", border: "10px", border2: "1px" },
+  { src: p4, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: p5, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: p6, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: p7, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: p8, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p9, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: p10, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: p11, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p12, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p13, columnSpan: "span 1", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: p14, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: p15, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: p16, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: p17, columnSpan: "span 2", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: p18, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p19, columnSpan: "span 1", rowSpan: "span 1", border: "10px", border2: "1px" },
+  { src: p20, columnSpan: "span 1", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: p21, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: p22, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: p23, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p24, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: p25, columnSpan: "span 2", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: p26, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: p27, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: p28, columnSpan: "span 1", rowSpan: "span 2", border: "15px", border2: "1px" },
+  { src: p29, columnSpan: "span 1", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: p30, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: p31, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
+
+  // gg1 - gg20
+  { src: gg1, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: gg2, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: gg3, columnSpan: "span 1", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: gg4, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: gg5, columnSpan: "span 2", rowSpan: "span 1", border: "30px", border2: "1px" },
+  { src: gg6, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: gg7, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: gg8, columnSpan: "span 2", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: gg9, columnSpan: "span 1", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: gg10, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: gg11, columnSpan: "span 1", rowSpan: "span 1", border: "15px", border2: "1px" },
+  { src: gg12, columnSpan: "span 1", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: gg13, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+  { src: gg14, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: gg15, columnSpan: "span 1", rowSpan: "span 1", border: "30px", border2: "1px" },
+  { src: gg16, columnSpan: "span 1", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: gg17, columnSpan: "span 2", rowSpan: "span 1", border: "10px", border2: "1px" },
+  { src: gg18, columnSpan: "span 1", rowSpan: "span 1", border: "25px", border2: "1px" },
+  { src: gg19, columnSpan: "span 2", rowSpan: "span 2", border: "15px", border2: "1px" },
+  { src: gg20, columnSpan: "span 2", rowSpan: "span 1", border: "20px", border2: "1px" },
+];
   
 
 const Gallery = () => {

@@ -10,6 +10,30 @@ import Hero4 from "./Hero4";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
+import cccc1 from '../Images4/cccc (1).jpg';
+import cccc2 from '../Images4/cccc (2).jpg';
+import cccc3 from '../Images4/cccc (3).jpg';
+import cccc4 from '../Images4/cccc (4).jpg';
+import cccc5 from '../Images4/cccc (5).jpg';
+import cccc6 from '../Images4/cccc (6).jpg';
+import cccc7 from '../Images4/cccc (7).jpg';
+import cccc8 from '../Images4/cccc (8).jpg';
+import cccc9 from '../Images4/cccc (9).jpg';
+import cccc10 from '../Images4/cccc (10).jpg';
+import cccc11 from '../Images4/cccc (11).jpg';
+import cccc12 from '../Images4/cccc (12).jpg';
+import cccc13 from '../Images4/cccc (13).jpg';
+import cccc14 from '../Images4/cccc (14).jpg';
+import cccc15 from '../Images4/cccc (15).jpg';
+import cccc16 from '../Images4/cccc (16).jpg';
+import cccc17 from '../Images4/cccc (17).jpg';
+import cccc18 from '../Images4/cccc (18).jpg';
+import cccc19 from '../Images4/cccc (19).jpg';
+import cccc20 from '../Images4/cccc (20).jpg';
+import cccc21 from '../Images4/cccc (21).jpg';
+
+
+
 
 const spaceBackgroundDark = `
   radial-gradient(circle at 30% 30%, #0f172a 0%, #1e293b 30%, #000000 90%)
@@ -255,9 +279,34 @@ const Button = styled.a`
 `;
 
 const images = [
-    { src: p1, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
-    { src: p2, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
-  ];
+  // { src: p1, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  // { src: p2, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: cccc20, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  
+  { src: cccc3, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: cccc4, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: cccc1, columnSpan: "span 2", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: cccc2, columnSpan: "span 2", rowSpan: "span 2", border: "15px", border2: "1px" },
+
+  { src: cccc5, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: cccc6, columnSpan: "span 2", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: cccc7, columnSpan: "span 2", rowSpan: "span 2", border: "15px", border2: "1px" },
+  { src: cccc8, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: cccc9, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: cccc10, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: cccc11, columnSpan: "span 2", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: cccc12, columnSpan: "span 2", rowSpan: "span 2", border: "15px", border2: "1px" },
+  { src: cccc13, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: cccc14, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+  { src: cccc15, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+  { src: cccc16, columnSpan: "span 2", rowSpan: "span 2", border: "20px", border2: "1px" },
+  { src: cccc17, columnSpan: "span 2", rowSpan: "span 2", border: "10px", border2: "1px" },
+  { src: cccc18, columnSpan: "span 2", rowSpan: "span 2", border: "15px", border2: "1px" },
+  { src: cccc19, columnSpan: "span 2", rowSpan: "span 2", border: "25px", border2: "1px" },
+ 
+  { src: cccc21, columnSpan: "span 2", rowSpan: "span 2", border: "30px", border2: "1px" },
+];
+
   
 
 const CertificatesPage = () => {
